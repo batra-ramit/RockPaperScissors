@@ -54,3 +54,15 @@ body {
   align-items: center;
 
 }
+
+.score h1{
+  color: #565468
+}
+
+.score p{
+  color: #2a45c2;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 2.5px;
+}

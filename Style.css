@@ -56,7 +56,8 @@ body {
 }
 
 .score h1{
-  color: #565468
+  color: #565468;
+  font-size: 56px;
 }
 
 .score p{
@@ -65,4 +66,32 @@ body {
   font-weight: 600;
   line-height: 19px;
   letter-spacing: 2.5px;
+}
+
+.hands{
+  width: 476px;
+  height: 430px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 100px;
+  background-image: url("assets/triangle.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.scissors{
+  margin-left: 20px;
+}
+.paper{
+  margin-right: 20px;
+}
+
+.hands .hand{
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.hands .hand:hover{
+  transform: translate3d(0px,-8px,0px);
 }

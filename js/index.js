@@ -11,16 +11,16 @@ function PickUserHand(hand) {
 
 
     if (hand == "rock")
-        document.getElementById("userPickImage").src = "/assets/Rock.png";
+        document.getElementById("userPickImage").src = "assets/Rock.png";
     else if (hand == "paper")
-        document.getElementById("userPickImage").src = "/assets/Paper.png";
+        document.getElementById("userPickImage").src = "assets/Paper.png";
     else
-        document.getElementById("userPickImage").src = "/assets/Scissors.png";
+        document.getElementById("userPickImage").src = "assets/Scissors.png";
     let cphand = PickComputerHand();
     referee(hand, cphand);
 }
 
-function PickComputerHand() {
+function PickComputerHand()    {
 
     let hands = ["rock", "paper", "scissors"];
     console.log(hands[1]);
@@ -28,13 +28,16 @@ function PickComputerHand() {
     let cphand = hands[Math.floor(Math.random() * 3)]
     
     if (cphand == "rock")
-        document.getElementById("computerPickImage").src = "/assets/Rock.png";
+        document.getElementById("computerPickImage").src = "assets/Rock.png";
     else if (cphand == "paper")
-        document.getElementById("computerPickImage").src = "/assets/Paper.png";
+        document.getElementById("computerPickImage").src = "assets/Paper.png";
     else
-        document.getElementById("computerPickImage").src = "/assets/Scissors.png";
+        document.getElementById("computerPickImage").src = "assets/Scissors.png";
     return cphand;
 }
+
+
+
 function referee(userHand, cpHand) {
     
     if (userHand == "paper" && cpHand == "scissors") {
